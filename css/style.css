@@ -104,4 +104,55 @@ body {
       margin-bottom: 20px;
     }
   }
+  .subchildren_intro {
+    padding: 1.5rem;
+  }
+  .accessibility_features {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      margin-bottom: 1rem;
+    }
+  }
+  .patron_companies {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 150px;
+      padding: 1.5rem;
+    }
+  }
+  .device_compability {
+    text-align: center;
+    padding: 1.5rem;
+    p {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      opacity: 50%;
+    }
+  }
+  .main-footer {
+    background-color: var(--colour-Grayish-Blue);
+    display: flex;
+    margin-top: 2.5rem;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    img {
+      width: 70px;
+    }
+    .footer_links {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: var(--colour-Dark-Grayish-Blue);
+        margin-top: 1.5rem;
+      }
+    }
+  }
 }
