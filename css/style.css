@@ -8,6 +8,14 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900 */
+
+.red-hat-display {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 /* css variables to reuse */
 :root {
   /* primary colours */
@@ -167,6 +175,9 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  p {
+    opacity: 50%;
+  }
   header {
     text-align: center;
     display: flex;
@@ -185,7 +196,7 @@ body {
     .intro_and_cta_btn {
       padding: 2rem;
       p {
-        padding-top: 2rem;
+        padding: 2rem 10rem;
       }
     }
     .Download_Buttons {
@@ -221,5 +232,111 @@ body {
         transition: ease-in-out 0.5s;
       }
     }
+  }
+  .features_section {
+    text-align: center;
+    padding: 4rem;
+  }
+  .track_snippet_description {
+    padding: 1rem 5rem 1rem 5rem;
+  }
+  .subchildren_of_track_snippet {
+    display: flex;
+    padding-top: 4rem;
+  }
+  .container_holding_descriptions {
+    text-align: left;
+    padding: 0rem 0rem 0rem 5rem;
+    .subchildren_of_track_snippet_content {
+      margin-top: 2rem;
+    }
+  }
+  .device_compability {
+    text-align: center;
+    p {
+      padding: 1rem 10rem;
+    }
+    .Download_Buttons {
+      padding: 2rem;
+      .iOS_button {
+        height: 30px;
+        background-color: var(--colour-Strong-Cyan);
+        border: none;
+        border-radius: 3rem;
+        height: fit-content;
+        color: white;
+        padding: 1rem 3rem 1rem 3rem;
+
+        /* width: fit-content; */
+      }
+      .iOS_button:hover {
+        box-shadow: 0px 16px 30px 0px hsl(171deg 66% 44% / 45%);
+        transition: ease-in-out 0.5s;
+      }
+      .Mac_button {
+        height: 30px;
+        background-color: var(--colour--Light-Blue);
+        border: none;
+        border-radius: 3rem;
+        height: fit-content;
+        color: white;
+        padding: 1rem 3rem 1rem 3rem;
+
+        /* width: fit-content; */
+      }
+      .Mac_button:hover {
+        box-shadow: 0px 16px 30px 0px hsl(233deg 100% 69% / 36%);
+        transition: ease-in-out 0.5s;
+      }
+    }
+  }
+  .accessibility_section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      padding-bottom: 1rem;
+    }
+    img {
+      margin: 0px auto;
+    }
+  }
+  .accessibility_features {
+    padding: 3rem;
+    width: 400px;
+
+    img {
+      margin: 0px auto 1rem auto;
+    }
+  }
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    img {
+      width: 50px;
+    }
+    a {
+      text-decoration: none;
+      padding: 1rem;
+    }
+  }
+  .social-icons {
+    display: flex;
+    img {
+      width: 50px;
+      padding: 1rem;
+    }
+  }
+  .accessibility_features_container {
+    display: flex;
+  }
+  .patron_companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
   }
 }
